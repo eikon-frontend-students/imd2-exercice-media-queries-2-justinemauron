@@ -107,6 +107,12 @@ footer {
   }
 }
 
+@media (min-width: 1200px) {
+  .burger {
+    display: none;
+  }
+}
+
 .burger.is-open {
   div:first-child {
     transform: translateY(8px) rotate(-45deg);
@@ -156,7 +162,6 @@ footer {
   transform: scale(1);
   pointer-events: all;
 }
-
 // ----------------------------------------
 // Navigation (desktop uniquement)
 // ----------------------------------------
@@ -174,6 +179,18 @@ footer {
   text-transform: uppercase;
 }
 
+@media (max-width: 1200px) {
+  ul.navigation {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .branding {
+    text-align: left;
+  }
+}
+
 // ----------------------------------------
 // Titre de section
 // ----------------------------------------
@@ -188,6 +205,11 @@ footer {
   text-transform: uppercase;
 }
 
+@media (min-width: 1200px) {
+  .section-title {
+    font-size: 50px;
+  }
+}
 // ----------------------------------------
 // Spectacles
 // ----------------------------------------
@@ -214,11 +236,25 @@ footer {
   font-weight: 300;
 }
 
+@media (min-width: 1200px) {
+  .show-date,
+  .show-origin {
+    font-size: 18px;
+  }
+}
+
 .show-title {
   font-size: 30px;
   font-weight: 800;
   line-height: 1;
   text-transform: uppercase;
+}
+
+@media (min-width: 1200px) {
+  .show-title {
+    font-size: 34px;
+    line-height: 34px;
+  }
 }
 
 // ----------------------------------------
@@ -242,10 +278,23 @@ footer {
   letter-spacing: -1.5px;
 }
 
+@media (min-width: 1200px) {
+  .quote-content {
+    font-size: 34px;
+    letter-spacing: -1.7px;
+  }
+}
+
 .quote-source {
   font-family: "Noto Serif";
   font-size: 15px;
   font-weight: 300;
+}
+
+@media (min-width: 1200px) {
+  .quote-source {
+    font-size: 18px;
+  }
 }
 
 // ----------------------------------------
@@ -263,6 +312,12 @@ footer {
   padding: 40px 20px;
   font-size: 15px;
   line-height: 1.33;
+}
+
+@media (min-width: 1200px) {
+  .article-content {
+    font-size: 18px;
+  }
 }
 
 .article-title {
@@ -296,6 +351,13 @@ footer {
   text-transform: uppercase;
 }
 
+@media (min-width: 1200px) {
+  .opportunities-title {
+    font-size: 50px;
+    letter-spacing: -2.5px;
+  }
+}
+
 .opportunity {
   margin-bottom: 30px;
   padding: 30px;
@@ -307,6 +369,12 @@ footer {
   font-weight: 800;
   line-height: 1;
   text-transform: uppercase;
+}
+
+@media (min-width: 1200px) {
+  .opportunity {
+    font-size: 34px;
+  }
 }
 
 // ----------------------------------------
@@ -323,11 +391,23 @@ footer {
   text-transform: uppercase;
 }
 
+@media (min-width: 1200px) {
+  .footer-title {
+    font-size: 100px;
+  }
+}
+
 .footer-contact {
   margin-bottom: 30px;
   color: var(--white);
   font-size: 15px;
   text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .footer-contact {
+    text-align: left;
+  }
 }
 
 .footer-contact-title {
@@ -345,4 +425,10 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+@media (min-width: 1200px) {
+  .footer-social {
+    justify-content: flex-end;
+  }
 }
